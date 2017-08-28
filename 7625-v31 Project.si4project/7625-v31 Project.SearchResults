@@ -1,0 +1,8 @@
+---- DayLight_mode Matches (7 in 2 files) ----
+drv_l2_cdsp.c (driver_l2\cdsp\src) line 37 : volatile INT8U  DayLight_mode=0;
+gp_ae_awb_process in drv_l2_cdsp.c (driver_l2\cdsp\src) : 											if(DayLight_mode == 0)
+gp_ae_awb_process in drv_l2_cdsp.c (driver_l2\cdsp\src) : 								            DayLight_mode=1;
+gp_ae_awb_process in drv_l2_cdsp.c (driver_l2\cdsp\src) : 									 	 if(DayLight_mode)
+gp_ae_awb_process in drv_l2_cdsp.c (driver_l2\cdsp\src) : 									 	 DayLight_mode=0;
+task_peripheral_handling.c (application\task_peripheral_handling\src) line 66 : extern volatile INT8U DayLight_mode;
+task_peripheral_handling_entry in task_peripheral_handling.c (application\task_peripheral_handling\src) : 					if (DayLight_mode)
